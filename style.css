@@ -1,0 +1,118 @@
+.fullBody {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    border-right: 2px solid black;
+    background-color: rgb(97, 97, 97);
+    padding: 1em;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+}
+#mainDiv {
+    flex: 1;
+    overflow: auto; 
+    background-color: #6e6e6e;
+}
+
+
+/*  =============================
+    side div and main div alligned
+    ==============================     */
+
+
+img{
+    height: 30px;
+    align-items: left;
+}
+.sidebar.collapsed {
+    width: 60px;
+}
+.sidebar.collapsed #head p,
+.sidebar.collapsed #head img,
+.sidebar.collapsed a{
+    display: none;
+}
+.sidebar.collapsed #head i{
+    display: block;
+    margin: auto;
+}
+#head i{
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+#head{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.sidebar a:hover {
+    background-color: #6e6e6e;
+}
+#one,
+#two,
+#three{
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+/*
+   =============
+   side bar done
+   =============   */
+
+
+.navbar{
+    background-color: rgb(77, 76, 76) !important;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.532);
+
+}
+i,
+.dropdown-menu{
+    color: white;
+}
+
+
+
+/* temperature converter*/
+#temp{
+    background-color: #080808;
+    color: white;
+    text-align: center;
+    max-width: 350px;
+    margin: 10vh 0px 0px 10vh;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(73, 72, 72);
+}
+#temp h2{
+    font-size: 1.8rem;
+    color: rgb(56, 119, 98);
+}
+#textbox{
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+button{
+    border: none;
+    color: white;
+    background-color: rgb(160, 26, 26);
+    border-radius: 10px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(18, 98, 16);
+}
